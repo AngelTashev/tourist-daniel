@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+@import 'https://use.fontawesome.com/releases/v5.15.2/css/all.css';
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #056fa3;
+
+}
+
+body, * {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #056fa3;
+    width: 100%;
+    height: 1000px;
+    padding-top: 20px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+.page-desc-container {
+    padding: 20px 0px;
+}
+
+.page-desc {
+    margin: 0;
+    color: #fff;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.gallery-pictures-container {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery-picture-wrapper {
+    border: 7px solid #fff;
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-picture {
+    height: 250px;
+    width: 400px;
+    margin-bottom: 50px;
+}
+
+.gallery-picture-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-picture:hover .gallery-picture-wrapper {
+    display: none;
+}
+
+.gallery-picture:hover .gallery-picture-text {
+    display: block;
+}
+
+.gallery-picture-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    color: #fff;
+    display: none;
+    background: rgba(0, 0, 0, 0.1);
+    border: 2px solid #000;
+    box-shadow: inset 0px 0px 8px -1px rgba(0,0,0,0.7);
+}
+
+.header-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    width: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
+                url('http://www.itsfrontporch.com/wp-content/uploads/6359524176194484221446729975_travel-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -500px;
+}
+
+#header-logo {
+    margin-top: 30px;
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.7);
+}
+
+nav {
+    padding-left: 20px;
+    text-transform:uppercase;
+}
+
+.home-button {
+    padding: 0px 20px;
+    font-size: 16px;
+    font-weight: 200;
+    color: #fff;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background: rgb(104,163,253);
+    background: linear-gradient(90deg, rgba(104,163,253,0.5) 0%, rgba(6,56,175,0.5) 74%, rgba(104,163,253,0.5) 100%);
+}
+
+.home-button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.home-button-container {
+    margin: 100px 40px;
+    align-self: flex-start;
+}
+
+.index-home-button {
+    margin-top: 100px;
+    justify-self: flex-end;
+}
+
+.header-nav-container {
+    background:#057bb6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 5px 10px -2px rgba(0,0,0,0.7);
+
+}
+
+.header-menu {
+    display: flex;
+    width: 1200px;
+    color:white ;
+    height: 80px;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-menu li {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+}
+.header-menu li a {
+    text-decoration:none;
+    color:#FFF  ;
+    line-height:30px;
+    padding:0px 15px;
+}
+.header-menu li:hover,
+.header-menu li:hover > a {
+    background: rgb(104, 193, 253) ;
+    color:#000;
+}
+.header-menu nav li ul {
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:99;
+    width:200px;
+    height:auto;
+    display:none;
+}
+
+.price-table-container {
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 3px solid #000;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.7);
+}
+
+.price-table {
+    padding: 20px;
+    color: #fff;
+    width: 800px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.price-table tr {
+    border-bottom: 2px solid #000;
+}
+
+.price-table thead {
+    background: #035e8b;
+}
+
+.price-table tr:nth-child(even) {
+    background: #057bb6;
+}
+
+.price-table tr:last-child {
+    border-bottom: unset;
+}
+
+.price-table td,
+.price-table th {
+    padding: 10px 20px;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #035e8b;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 5px 10px -2px rgba(0,0,0,0.7);
+    padding: 0px 20px;
+}
+
+.footer-text-container p {
+    color: #fff;
+    font-weight: 200;
+}
+
+.footer-contacts-container a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.index-nav-container {
+    align-self: flex-start;
+    width: 100%;
+    height: 60px;
+    margin-top: 50px;
+}
+
+.index-menu {
+    list-style: none;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+    margin: 0;
+
+}
+
+.index-menu li {
+    padding: 10px 10px;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.index-menu li:hover{
+    background: rgb(104, 193, 253);
+    border: 2px solid #000;
+}
+
+.index-menu li:hover a {
+    color: #000;
+}
+
+.index-menu li a {
+    font-size: 26px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.index-heading-container {
+    align-self: flex-start;
+    padding-left: 40px;
+    color: #fff;
+    background: #035e8b;
+    width: calc(100% - 40px);
+    margin: 0px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.7);
+}
+
+.index-heading {
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.index-heading span {
+    font-weight: 600;
+}
+
+.feedback-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.form-input {
+    background: transparent;
+    border: 2px solid #000;
+    box-shadow: 0px 0px 2px -1px rgba(0,0,0,0.7);
+    outline: none;
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    padding-left: 20px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.form-input:focus {
+    box-shadow: inset 0px 0px 2px 1px rgba(0,0,0,0.7);
+}
+
+.feedback-form-result-container {
+    color: #fff;
+    /* display: none; */
+}
+
+.form-button {
+    background: #035e8b;
+    border: 2px solid #000;
+    border-radius: 20px;
+    height: 35px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+.contact {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    justify-content: space-between;
+}
+
+.contact i {
+    margin-right: 10px;
+}
+
+.contact-heading,
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.about-us-container {
+    border: 2px solid #000;
+    background: #057bb6;
+    border-radius: 20px;
+    padding: 10px 40px;
+    margin-top: 40px;
+    box-shadow: inset 0px 0px 5px 3px rgba(0,0,0,0.7);
+}
+
+.about-us-text {
+    color: #fff;
+    font-weight: 300;
+}
