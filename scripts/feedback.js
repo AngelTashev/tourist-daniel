@@ -18,7 +18,7 @@ function setEventListeners() {
 }
 
 function displayText(name, discount) {
-    resultField.innerHTML = `${name}, вие получавате ${discount}% отстъпка за екскурзия по ваш избор`;
+    resultField.innerHTML = `${name}, вие получавате ${discount}% отстъпка за курс по избор`;
 }
 
 function validateAndReturnName(name) {
@@ -38,7 +38,7 @@ function validateAndReturnAge(age) {
             throw new Error('Invalid years');
         }
     } catch (err) {
-        alert('Моля въведете валидно число в полето за години! (от 14 до 100)');
+        alert('Моля въведете валидно число в полето за години! (от 8 до 80)');
         return false;
     }
 

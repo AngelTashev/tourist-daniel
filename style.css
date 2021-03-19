@@ -4,8 +4,8 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background: #056fa3;
-
+    background: #FF5666;
+    color: #262626;
 }
 
 body, * {
@@ -16,21 +16,22 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-content: flex-end;
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #056fa3;
+    background: #FF5666;
     width: 100%;
     height: 1000px;
     padding-top: 20px;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
+.menu-main-container {
+    display: flex;
+    border-top: 3px solid #262626;
 }
 
 .page-desc-container {
@@ -80,29 +81,32 @@ main {
 }
 
 .gallery-picture-text {
+    color: #fff;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     padding: 20px;
     justify-content: center;
-    color: #fff;
     display: none;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.25);
     border: 2px solid #000;
     box-shadow: inset 0px 0px 8px -1px rgba(0,0,0,0.7);
 }
 
 .header-logo-wrapper {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    height: 250px;
+    height: 300px;
     width: 100%;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
-                url('http://www.itsfrontporch.com/wp-content/uploads/6359524176194484221446729975_travel-01.jpg');
+                url('./images/DAN05577.JPG');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -500px;
+
 }
 
 #header-logo {
@@ -111,30 +115,31 @@ main {
 }
 
 nav {
-    padding-left: 20px;
     text-transform:uppercase;
 }
 
+
 .home-button {
+    align-self: flex-end;
     padding: 0px 20px;
     font-size: 16px;
     font-weight: 200;
-    color: #fff;
     height: 50px;
+    color: #262626;
     border: 1px solid #000;
     border-radius: 8px;
-    background: rgb(104,163,253);
-    background: linear-gradient(90deg, rgba(104,163,253,0.5) 0%, rgba(6,56,175,0.5) 74%, rgba(104,163,253,0.5) 100%);
+    background: rgb(255,86,102);
+    background: linear-gradient(90deg, rgba(255,86,102,1) 0%, rgba(245,138,7,1) 60%, rgba(255,86,102,1) 100%);
 }
 
 .home-button a {
-    color: #fff;
+    color: #262626;
     text-decoration: none;
 }
 
 .home-button-container {
-    margin: 100px 40px;
-    align-self: flex-start;
+    margin: 0px 40px;
+    align-self: flex-end;
 }
 
 .index-home-button {
@@ -142,20 +147,9 @@ nav {
     justify-self: flex-end;
 }
 
-.header-nav-container {
-    background:#057bb6;
+.aside-menu {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    border-radius: 0px 0px 10px 10px;
-    box-shadow: 0px 5px 10px -2px rgba(0,0,0,0.7);
-
-}
-
-.header-menu {
-    display: flex;
-    width: 1200px;
+    flex-direction: column;
     color:white ;
     height: 80px;
     width: 100%;
@@ -164,24 +158,27 @@ nav {
     margin: 0;
 }
 
-.header-menu li {
+.aside-menu li {
     display: flex;
     align-items: center;
     margin: 0;
     height: 100%;
+    font-size: 20px;
+    padding: 10px 0px;
 }
-.header-menu li a {
+.aside-menu li a {
     text-decoration:none;
-    color:#FFF  ;
+    color: #262626;
     line-height:30px;
     padding:0px 15px;
 }
-.header-menu li:hover,
-.header-menu li:hover > a {
-    background: rgb(104, 193, 253) ;
+.aside-menu li:hover,
+.aside-menu li:hover > a {
+    background: #c187f7;
     color:#000;
+    border-radius: 15px;
 }
-.header-menu nav li ul {
+.aside-menu nav li ul {
     position:absolute;
     top:100%;
     left:0px;
@@ -189,6 +186,20 @@ nav {
     width:200px;
     height:auto;
     display:none;
+}
+
+.aside-menu-container {
+    border-radius: 20px;
+    margin: 10px 0px 10px 10px;
+    padding: 20px;
+    height: 100%;
+    float: left;
+    width: 200px;
+    height: 980px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #E2C2FF;
 }
 
 .price-table-container {
@@ -201,7 +212,7 @@ nav {
 
 .price-table {
     padding: 20px;
-    color: #fff;
+    color: #262626;
     width: 800px;
     border-collapse: collapse;
     text-align: left;
@@ -212,11 +223,11 @@ nav {
 }
 
 .price-table thead {
-    background: #035e8b;
+    background: #c187f7;
 }
 
 .price-table tr:nth-child(even) {
-    background: #057bb6;
+    background: #cea2f7;
 }
 
 .price-table tr:last-child {
@@ -234,34 +245,34 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #035e8b;
+    background: #A9FFCB;
     border-radius: 10px 10px 0px 0px;
     box-shadow: 0px 5px 10px -2px rgba(0,0,0,0.7);
     padding: 0px 20px;
 }
 
 .footer-text-container p {
-    color: #fff;
+    color: #262626;
     font-weight: 200;
 }
 
 .footer-contacts-container a {
-    color: #fff;
+    color: #262626;
     text-decoration: none;
     font-weight: 500;
 }
 
 .index-nav-container {
     align-self: flex-start;
-    width: 100%;
+    width: 500px;
     height: 60px;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 .index-menu {
     list-style: none;
-    margin-top: 30px;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     height: 60px;
     margin: 0;
@@ -278,7 +289,7 @@ footer {
 }
 
 .index-menu li:hover{
-    background: rgb(104, 193, 253);
+    background: #c187f7;
     border: 2px solid #000;
 }
 
@@ -295,8 +306,8 @@ footer {
 .index-heading-container {
     align-self: flex-start;
     padding-left: 40px;
-    color: #fff;
-    background: #035e8b;
+    color: #262626;
+    background: #E2C2FF;
     width: calc(100% - 40px);
     margin: 0px 20px;
     border-radius: 20px;
@@ -349,12 +360,17 @@ footer {
 }
 
 .form-button {
-    background: #035e8b;
+    background: #c187f7;
     border: 2px solid #000;
     border-radius: 20px;
     height: 35px;
     color: #fff;
     font-size: 14px;
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: #ddd;
 }
 
 .contacts-container {
@@ -383,7 +399,7 @@ footer {
 
 .about-us-container {
     border: 2px solid #000;
-    background: #057bb6;
+    background: #A9FFCB;
     border-radius: 20px;
     padding: 10px 40px;
     margin-top: 40px;
@@ -391,6 +407,15 @@ footer {
 }
 
 .about-us-text {
-    color: #fff;
+    color: #262626;
     font-weight: 300;
 }
+
+
+/* colors */
+/* #262626 - black */
+/* #A9FFCB - mint green */
+/* #F58A07 - orange */
+/* #FF5666 - pink */
+/* #E2C2FF - light purple */
+/* #AFC1D6 - light blue */

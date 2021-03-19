@@ -15,73 +15,83 @@
 
     <header>
         <article class="header-logo-wrapper">
-            <svg id="header-logo" width="170" height="100" xmlns="http://www.w3.org/2000/svg">
-
-                <g>
-                 <title>Layer 1</title>
-                 <rect rx="10" stroke-width="8" id="svg_1" height="100" width="170" y="0" x="0" opacity="undefined" stroke="#000" fill="#056fa3"/>
-                 <text transform="matrix(1,0,0,1,0,0) " font-style="normal" font-weight="normal" xml:space="preserve" text-anchor="start" font-family="'Montserrat'" font-size="29" id="svg_3" y="60" x="12.77344" opacity="undefined" stroke-opacity="null" stroke-dasharray="null" stroke="#000" fill="#ffffff">DVTraVEL</text>
-                 <ellipse ry="6.5" rx="9" id="svg_5" cy="17.5" cx="35.5" opacity="undefined" fill-opacity="null" stroke-opacity="null" stroke-dasharray="null" stroke-width="0" stroke="#000" fill="#ffffff"/>
-                 <ellipse ry="4.5" rx="9.5" id="svg_6" cy="78.5" cx="107" opacity="undefined" fill-opacity="null" stroke-opacity="null" stroke-dasharray="null" stroke-width="0" stroke="#000" fill="#ffffff"/>
-                 <ellipse ry="4.5" rx="10.5" id="svg_7" cy="85.5" cx="40" opacity="undefined" fill-opacity="null" stroke-opacity="null" stroke-dasharray="null" stroke-width="0" stroke="#000" fill="#ffffff"/>
-                 <ellipse ry="3" rx="5.5" id="svg_8" cy="28" cx="129" opacity="undefined" fill-opacity="null" stroke-opacity="null" stroke-dasharray="null" stroke-width="0" stroke="#000" fill="#ffffff"/>
-                 <ellipse ry="3.5" rx="8.5" id="svg_9" cy="12.5" cx="92" opacity="undefined" fill-opacity="null" stroke-opacity="null" stroke-dasharray="null" stroke-width="0" stroke="#000" fill="#ffffff"/>
-                 <ellipse ry="2" rx="2.5" id="svg_10" cy="75" cx="73" opacity="undefined" fill-opacity="null" stroke-opacity="null" stroke-dasharray="null" stroke-width="0" stroke="#000" fill="#ffffff"/>
-                 <ellipse ry="0.5" rx="1" id="svg_11" cy="84.5" cx="150.5" opacity="undefined" fill-opacity="null" stroke-opacity="null" stroke-dasharray="null" stroke-width="0" stroke="#000" fill="#ffffff"/>
+            <svg width="170" height="100" xmlns="http://www.w3.org/2000/svg"
+                style="background-color: rgba(255, 255, 255, 0.5);">
+                <g id="main">
+                    <text stroke="#000"
+                        transform="matrix(0.6589190170605291,0,0,0.7367985502910342,1.7349752630344992,17.086926379376045) "
+                        xml:space="preserve" text-anchor="start" font-family="'Montserrat'" font-size="29" id="svg_2"
+                        y="84.09833" x="5.85909" opacity="undefined" fill-opacity="null" stroke-opacity="null"
+                        stroke-dasharray="null" stroke-width="0" fill="#000000">Dancing Studios</text>
+                    <path id="svg_3"
+                        d="m143.4507,23.82235c0,2.80032 -26.16927,5.07042 -58.45071,5.07042m58.45071,-5.07042l0,0c0,2.80032 -26.16927,5.07042 -58.45071,5.07042c-32.28142,0 -58.45069,-2.2701 -58.45069,-5.07042m0,0l0,0c0,-2.80031 26.16927,-5.07042 58.45069,-5.07042c32.28144,0 58.45071,2.27011 58.45071,5.07042l0,20.2817c0,2.80031 -26.16927,5.07041 -58.45071,5.07041c-32.28142,0 -58.45069,-2.2701 -58.45069,-5.07041l0,-20.2817z"
+                        opacity="undefined" fill-opacity="null" stroke-opacity="null" stroke-dasharray="2,2"
+                        stroke="#000" fill="#000000" />
+                    <text stroke="#000" transform="matrix(1.1994266510009766,0,0,1,-11.124267876148224,0) "
+                        font-style="normal" font-weight="normal" xml:space="preserve" text-anchor="start"
+                        font-family="'Montserrat'" font-size="29" id="svg_4" y="44.78873" x="52.26504"
+                        opacity="undefined" stroke-opacity="null" stroke-dasharray="2,2" stroke-width="0"
+                        fill="#ffffff">Iliev</text>
                 </g>
-               </svg>
+            </svg>
         </article>
-        <article id="header-nav" class="header-nav-container">
-            <nav>
-                <ul class="header-menu">
-                    <li><a href="./gallery.html">Галерия</a></li>
-                    <li><a href="./prices.html">Цени</a></li>
-                    <li><a href="./feedback.html">Обратна връзка</a></li>
-                    <li><a href="./contacts.html">Контакти</a></li>
-                    <li><a href="./aboutus.html">За нас</a></li>
-                </ul>
-            </nav>
-        </article>    
     </header>
 
-    <main>
+    <div class="menu-main-container">
+        <aside class="aside-menu-container">
+            <article class="aside-nav-container">
+                <nav>
+                    <ul class="aside-menu">
+                        <li><a href="./gallery.html">Галерия</a></li>
+                        <li><a href="./prices.html">Цени</a></li>
+                        <li><a href="./feedback.html">Обратна връзка</a></li>
+                        <li><a href="./contacts.html">Контакти</a></li>
+                        <li><a href="./aboutus.html">За нас</a></li>
+                    </ul>
+                </nav>
+            </article>
+            <article class="home-button-container">
+                <button class="home-button">
+                    <i class="fas fa-home"></i>
+                    <a href="./index.html">Начало</a>
+                </button>
+            </article>
+        </aside>
 
-        <article class="page-desc-container">
-            <h1 class="page-desc">Обратна връзка</h1>
-        </article>
-        <article class="feedback-form-container">
-            <form class="feedback-form">
-                <label for="name-input" class="form-label">Имена</label>
-                <input type="text" name="name-input" id="name-input" class="form-input" required>
+        <main>
 
-                <label for="age-input" class="form-label">Години</label>
-                <input type="text" name="age-input" id="age-input" class="form-input" required>
+            <article class="page-desc-container">
+                <h1 class="page-desc">Обратна връзка</h1>
+            </article>
+            <article class="feedback-form-container">
+                <form class="feedback-form">
+                    <label for="name-input" class="form-label">Имена</label>
+                    <input type="text" placeholder="Вашите имена" name="name-input" id="name-input" class="form-input"
+                        required>
 
-                <button id="send-button" class="form-button">Изпрати</button>
-            </form>
-        </article>
+                    <label for="age-input" class="form-label">Години</label>
+                    <input type="text" placeholder="На колко години сте?" name="age-input" id="age-input"
+                        class="form-input" required>
 
-        <article class="feedback-form-result-container" >
-            <h3 id="feedback-result" class="feedback-form-result"></h3>
-        </article>
-        
-        <article class="home-button-container">
-            <button class="home-button">
-                <i class="fas fa-home"></i>
-                <a href="./index.html">Начало</a>
-            </button>
-        </article>
-    </main>
+                    <button id="send-button" class="form-button">Изпрати</button>
+                </form>
+            </article>
+
+            <article class="feedback-form-result-container">
+                <h3 id="feedback-result" class="feedback-form-result"></h3>
+            </article>
+        </main>
+    </div>
 
     <footer>
         <article class="footer-text-container">
-            <p>© DVTraVEL 2021, All rights reserved</p>
+            <p>© Iliev Dancing Studios 2021, All rights reserved</p>
         </article>
         <article class="footer-contacts-container">
             <a href="./contacts.html">Контакти</a>
         </article>
     </footer>
-    
+
 </body>
 
 </html>
